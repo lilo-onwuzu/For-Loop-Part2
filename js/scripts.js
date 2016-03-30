@@ -12,7 +12,7 @@ $(document).ready(function(){
     // icecreams.push(ice2Name);
     // icecreams.push(ice3Name);
 
-// For Each Icecream Implementation
+// For Each Loop Icecream Implementation
     // icecreams.forEach(function(icecream){
     // alert(icecream);
     // });
@@ -33,21 +33,26 @@ $(document).ready(function(){
     // };
 
 // WORD PUZZLE
-var enterWord = $("input#word").val();
-var res = enterWord.split("");
-var blank = [];
+// Pushing one array into another as in var blank = [1];blank.push(strSplit); will push the "length" of the strSplit as blank[0]. The modified array blank  will be [1,length of strSplit]. But the other array (strSplit) stays the same as an array.
+// Pushing elements of an array one by one will modify the other array into an array with the elements of the new array included.
+// || or logic "OR" demarcates the left side from the right side.
 
-blank.push(res);
- alert(blank);
- for (var index = 0; index <= blank.length; index++){
-      console.log(index);
-    if (blank[index] === "a"||"e"||"i"||"o"||"u"){
-      console.log("found vowel");
-    } else {
-        alert("hxxx");
-    };
-  };
-});
+// User Interface Logic
+      var enterWord = $("input#word").val();
+      var strSplit = enterWord.split("");
+
+// Business Logic
+      for (var index = 0; index < strSplit.length; index += 1){
+        if (strSplit[index]=="a"||strSplit[index]=="e"||strSplit[index]=="i"||
+          strSplit[index]=="o"||strSplit[index]=="u"){
+            strSplit[index] = "-";
+        };
+      };
+
+// User Interface Logic Continued
+      var outputString = strSplit.join([separator = ""]);
+      console.log(outputString);
+  });
 });
 
 
