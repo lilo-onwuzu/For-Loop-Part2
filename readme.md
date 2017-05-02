@@ -11,7 +11,8 @@
 	This code will output a puzzle string from an input string with the vowels hidden
 
 #### _Setup/Installation Requirements_
-	Clone this repository before setting up
+	Clone this repository
+	Open index.html file in browser
 	User 1 enters a word to get the puzzle
 	User 2 tries to guess the User 1's entry
 	Press enter to view User 1's entry. Result prints to console
