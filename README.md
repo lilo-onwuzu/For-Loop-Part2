@@ -12,9 +12,9 @@
 
 #### _Setup/Installation Requirements_
 	Clone this repository before setting up
-	Enter a number to count up to
-	Enter a number to count by
-	Hit OK to move through counts
+	User 1 enters a word to get the puzzle
+	User 2 tries to guess the User 1's entry
+	Press enter to view User 1's entry. Result prints to console
 
 #### _Known Bugs_
  	None
